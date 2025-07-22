@@ -1,0 +1,43 @@
+.card {
+    width: 100%;
+    background: #FFFFFF;
+    border-radius: 16px;
+    overflow: hidden;
+    flex: 1 1 calc(33.333% - 20px);
+  }
+
+  .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px 0;
+  }
+  
+  .card-header h3 {
+    padding: 14px 16px;
+    text-align: center;
+  }
+  
+  .card-header img {
+    width: 100%;
+    object-fit: cover;
+    height: 650px;
+  }
+  
+  .card-body {
+    padding: 0 16px;
+    text-align: center;
+  }
+  
+  .card-footer {
+    padding: 14px 16px;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+.card iframe {
+  max-width: 100%;
+  height: auto;
+}

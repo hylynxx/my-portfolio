@@ -4,54 +4,95 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+  <title>About Me | My Portfolio</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link rel="stylesheet" href="../assets/styles/style.css">
 </head>
 
 <body>
-  <!-- Header -->
-  <header id="header">
-    <nav class="navbar container">
-      <div>^.^chupapimunyayo</div>
-      <input type="checkbox" class="menu-toggle" id="menu-toggle">
-      <label for="menu-toggle" class="menu-btn">☰</label>
-      <ul class="nav-links">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./lyniee.html">lyniee</a></li>
-        <li><a href="./social.html">Social</a></li>
-      </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg portfolio-navbar bg-portfolio-red shadow-sm">
+      <div class="container-xxl py-3">
+        <a class="navbar-brand" href="../index.html">My Portfolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+          aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-lg-4">
+            <li class="nav-item">
+              <a class="nav-link" href="../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./skills.html">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./social.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
   </header>
 
-  <!-- Main Content -->
   <main>
-
-    <!-- Hero Banner Section -->
-    <section id="hero-banner" class="container">
-      <div class="hero-content">
-        <h1>About Me</h1>
-        <p>I am currently a 2nd-year college student taking up BSIT( Bachelor Science Information Technology) at Cordova Public College (CPC).
-          <br>
-          <br>
-          I'll be honest - Sometimes I get lazy when it comes in activities and assignment, especially when it comes to coding or major subjects (and maybe even some minor ones too, haha!). But despite that, I'm still trying my best to keep going and improve little by little.
-        </p>
-
-        <div class="btn-group">
-          <a href="lyniee.html" target="_blank" class="primary-button">Visit lyniee</a>
-          <a href="./contact.html" target="_blank" class="secondary-button">My Social</a>
+    <section class="py-5">
+      <div class="container-xxl">
+        <div class="row align-items-center g-5 flex-column-reverse flex-lg-row">
+          <div class="col-lg-6">
+            <h1 class="display-4 fw-bold mb-4">About Me</h1>
+            <p class="text-portfolio-muted mb-3">
+              I am currently a 1st-year college student taking up BSIT (Bachelor of Science in Information Technology)
+              at Cordova Public College (CPC).
+            </p>
+            <p class="text-portfolio-muted mb-4">
+              I'll be honest — sometimes I get lazy when it comes to activities and assignments, especially when it
+              comes to coding or major subjects (and maybe even some minor ones too, haha!). But despite that, I'm
+              still trying my best to keep going and improve little by little.
+            </p>
+            <div class="d-grid gap-2 d-sm-flex">
+              <a class="btn btn-portfolio btn-lg px-4" href="./skills.html">My Skills</a>
+              <a class="btn btn-outline-portfolio btn-lg px-4" href="./social.html">Contact Me</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <img class="hero-photo img-fluid rounded-portfolio shadow"
+              src="../assets/image/front.jpg"
+              alt="Portrait of the portfolio owner accompanying her introduction as a first-year BSIT student at Cordova Public College.">
+          </div>
         </div>
-      </div>
-
-      <div class="hero-image">
-        <img src="https://static1.colliderimages.com/wordpress/wp-content/uploads/2025/05/kpop-demon-hunters.jpg?q=70&fit=crop&w=1140&h=&dpr=1">
       </div>
     </section>
   </main>
 
-  <footer id="footer">
-    <p>© 2025 - My Portfolio. All rights reserved.</p>
+  <footer class="portfolio-footer bg-portfolio-burgundy text-white py-4">
+    <div class="container-xxl">
+      <div class="d-flex flex-column flex-md-row align-items-center justify-content-between gap-3">
+        <p class="mb-0 small">© 2026 My Portfolio. All rights reserved.</p>
+        <ul class="nav justify-content-center gap-3">
+          <li class="nav-item"><a class="nav-link p-0" href="../index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link p-0" href="./about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link p-0" href="./skills.html">Skills</a></li>
+          <li class="nav-item"><a class="nav-link p-0" href="./social.html">Contact</a></li>
+        </ul>
+        <div class="d-flex gap-2">
+          <a class="social-icon" href="https://www.facebook.com/mary.mae.malinao.832428" aria-label="Facebook"
+            target="_blank" rel="noopener noreferrer"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+          <a class="social-icon" href="https://www.instagram.com/mary_mae999?psln=anNnazE2d3Rhd2Ex"
+            aria-label="Instagram" target="_blank" rel="noopener noreferrer"><i class="bi bi-instagram"
+              aria-hidden="true"></i></a>
+          <a class="social-icon" href="https://www.tiktok.com/@your___mae" aria-label="TikTok" target="_blank"
+            rel="noopener noreferrer"><i class="bi bi-tiktok" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
   </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

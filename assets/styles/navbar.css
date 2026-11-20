@@ -1,13 +1,21 @@
+/* Header and Navigation */
+
 #header {
-  background: #B5651D;
+  background: #8d0004;
+  box-shadow: 0 4px 14px rgba(74, 36, 36, 0.12);
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 24px;
+  padding: 24px;
   color: #FFFFFF;
+}
+
+.navbar > div {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .nav-links {
@@ -21,8 +29,12 @@
 }
 
 .nav-links a {
-  text-decoration: none;
   color: #FFFFFF;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
 }
 
 .menu-btn {
@@ -35,16 +47,20 @@
   display: none;
 }
 
+/* Responsive Navigation */
+
 @media only screen and (max-width: 768px) {
   .nav-links {
+    position: absolute;
+    top: 72px;
+    left: 0;
+    z-index: 10;
     display: none;
     width: 100%;
     flex-direction: column;
-    position: absolute;
-    background: #333333;
-    top: 60px;
-    left: 0;
-    padding-bottom: 20px;
+    gap: 16px;
+    padding: 0 0 20px;
+    background: #B91C1C;
   }
 
   .menu-btn {
@@ -58,6 +74,6 @@
 
 @media only screen and (max-width: 1024px) {
   .navbar {
-    padding: 24px 24px;
+    padding: 24px;
   }
 }

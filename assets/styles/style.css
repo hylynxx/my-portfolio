@@ -1,39 +1,203 @@
-/*
--- Responsive Breakpoints
-sm: 640px - mobile phone size
-md: 768px - Tablet size
-lg: 1024px - Laptop standard size
-xl: 1280px -- larger wide desktop size
-*/
-
-
-/* Reusable Styles */
-@import "button.css";
-@import "card.css";
-
-/* Section Styles */
-@import "navbar.css";
-@import "hero-banner.css";
-@import "lyniee.css";
 @import "social.css";
-@import "submission.css";
-@import "footer.css";
 
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+:root {
+  --portfolio-burgundy: #4a2424;
+  --portfolio-red: #8d0004;
+  --portfolio-orange: #8d0004;
+  --portfolio-orange-dark: #b9652e;
+  --portfolio-orange-light: #e0a36f;
+  --portfolio-cream: #fbf7f2;
+  --portfolio-muted: #7a6157;
 }
 
-html, body {
+body {
+  color: var(--portfolio-burgundy);
   font-family: Arial, Helvetica, sans-serif;
-  overflow-x: hidden;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
+.bg-portfolio-red {
+  background-color: var(--portfolio-red) !important;
 }
 
+.bg-portfolio-burgundy {
+  background-color: var(--portfolio-burgundy) !important;
+}
 
+.bg-portfolio-cream {
+  background-color: var(--portfolio-cream) !important;
+}
+
+.bg-portfolio-orange {
+  background-color: var(--portfolio-orange) !important;
+}
+
+.text-portfolio-burgundy {
+  color: var(--portfolio-burgundy) !important;
+}
+
+.text-portfolio-orange {
+  color: var(--portfolio-orange) !important;
+}
+
+.text-portfolio-muted {
+  color: var(--portfolio-muted) !important;
+}
+
+.rounded-portfolio {
+  border-radius: 24px !important;
+}
+
+.portfolio-navbar .navbar-brand {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.portfolio-navbar .navbar-brand:hover,
+.portfolio-navbar .navbar-brand:focus {
+  color: #ffffff;
+}
+
+.portfolio-navbar .nav-link {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.portfolio-navbar .nav-link:hover,
+.portfolio-navbar .nav-link:focus,
+.portfolio-navbar .nav-link.active {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.portfolio-navbar .navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+.portfolio-navbar .navbar-toggler-icon {
+  filter: invert(1);
+}
+
+@media (max-width: 991.98px) {
+  .portfolio-navbar .navbar-collapse {
+    padding: 1rem;
+    border-radius: 0 0 1rem 1rem;
+    background-color: #b91c1c;
+  }
+}
+
+.btn-portfolio {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: var(--portfolio-orange);
+  --bs-btn-border-color: var(--portfolio-orange);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: var(--portfolio-orange-dark);
+  --bs-btn-hover-border-color: var(--portfolio-orange-dark);
+  --bs-btn-focus-shadow-rgb: 199, 125, 69;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: var(--portfolio-orange-dark);
+  --bs-btn-active-border-color: var(--portfolio-orange-dark);
+  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-disabled-bg: var(--portfolio-orange);
+  --bs-btn-disabled-border-color: var(--portfolio-orange);
+  box-shadow: 0 6px 14px rgba(199, 125, 69, 0.2);
+}
+
+.btn-outline-portfolio {
+  --bs-btn-color: var(--portfolio-orange);
+  --bs-btn-border-color: var(--portfolio-orange);
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: var(--portfolio-orange);
+  --bs-btn-hover-border-color: var(--portfolio-orange);
+  --bs-btn-focus-shadow-rgb: 199, 125, 69;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: var(--portfolio-orange-dark);
+  --bs-btn-active-border-color: var(--portfolio-orange-dark);
+}
+
+.hero-photo {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+@media (max-width: 991.98px) {
+  .hero-photo {
+    height: 320px;
+  }
+}
+
+.skill-card {
+  border-color: #f1e6dc !important;
+  border-radius: 20px !important;
+  box-shadow: 0 12px 28px rgba(74, 36, 36, 0.08);
+}
+
+.skill-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border: 1px solid #efe1d2;
+  border-radius: 18px;
+  background-color: var(--portfolio-cream);
+  color: var(--portfolio-burgundy);
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.skill-card .progress {
+  height: 8px;
+  background-color: #ede7e1;
+}
+
+.skill-card .progress-bar {
+  background: linear-gradient(90deg, var(--portfolio-orange), var(--portfolio-orange-light));
+}
+
+.contact-card {
+  border-color: #f1e6dc !important;
+  box-shadow: 0 12px 30px rgba(74, 36, 36, 0.08);
+}
+
+.contact-card .form-control {
+  padding: 0.875rem 1rem;
+  border-color: #efe1d2;
+  background-color: var(--portfolio-cream);
+  color: var(--portfolio-burgundy);
+  font-size: 0.875rem;
+}
+
+.contact-card .form-control:focus {
+  border-color: var(--portfolio-orange);
+  background-color: #ffffff;
+  box-shadow: 0 0 0 0.25rem rgba(199, 125, 69, 0.15);
+}
+
+.portfolio-footer a {
+  color: #fbf7f2;
+  text-decoration: none;
+}
+
+.portfolio-footer a:hover,
+.portfolio-footer a:focus {
+  color: var(--portfolio-orange-light);
+}
+
+.social-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: var(--portfolio-orange);
+  color: #ffffff;
+  font-size: 1rem;
+}
+
+.social-icon:hover,
+.social-icon:focus {
+  background-color: var(--portfolio-orange-light);
+  color: #ffffff;
+}

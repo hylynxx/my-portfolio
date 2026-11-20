@@ -1,62 +1,281 @@
-#contact {
-    height: 100%;
-    background: #F1F1F1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 72px 24px;
+.contact-illustration {
+  min-height: 420px;
+  padding: 32px;
+  overflow: hidden;
+}
+
+.cartoon-scene {
+  position: relative;
+  width: 320px;
+  height: 320px;
+}
+
+.scene-circle {
+  position: absolute;
+  top: 20px;
+  left: 35px;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background: #f5e3d0;
+}
+
+.notification-card {
+  position: absolute;
+  top: 38px;
+  right: 0;
+  z-index: 9;
+  width: 135px;
+  padding: 12px;
+  border: 2px solid #f0d8c2;
+  border-radius: 14px;
+  background: #ffffff;
+  box-shadow: 0 8px 20px rgba(74, 36, 36, 0.1);
+}
+
+.notification-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.notification-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #8d0004;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.notification-title {
+  color: #4a2424;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.notification-text {
+  margin-bottom: 8px;
+  color: #7a6157;
+  font-size: 11px;
+}
+
+.notification-line {
+  height: 5px;
+  margin-top: 5px;
+  border-radius: 5px;
+  background: #efe1d2;
+}
+
+.notification-line-one {
+  width: 80%;
+}
+
+.notification-line-two {
+  width: 55%;
+}
+
+.cartoon-girl {
+  position: absolute;
+  top: 15px;
+  left: 40px;
+  width: 210px;
+  height: 290px;
+}
+
+.girl-hair-back {
+  position: absolute;
+  top: 10px;
+  left: 25px;
+  z-index: 1;
+  width: 155px;
+  height: 190px;
+  border-radius: 80px 80px 50px 50px;
+  background: #4a2424;
+}
+
+.girl-body {
+  position: absolute;
+  top: 155px;
+  left: 25px;
+  z-index: 2;
+  width: 160px;
+  height: 130px;
+  border-radius: 80px 80px 22px 22px;
+  background: #8d0004;
+}
+
+.girl-hood {
+  position: absolute;
+  top: 30px;
+  left: 28px;
+  z-index: 3;
+  width: 154px;
+  height: 145px;
+  border-radius: 80px 80px 45px 45px;
+  background: #8d0004;
+}
+
+.girl-face {
+  position: absolute;
+  top: 38px;
+  left: 50px;
+  z-index: 4;
+  width: 110px;
+  height: 118px;
+  border-radius: 55px 55px 50px 50px;
+  background: #ffd8b1;
+}
+
+.girl-hair-front {
+  position: absolute;
+  top: 14px;
+  left: 38px;
+  z-index: 5;
+  width: 135px;
+  height: 70px;
+  border-radius: 70px 70px 0 0;
+  background: #4a2424;
+}
+
+.girl-eye {
+  position: absolute;
+  top: 92px;
+  z-index: 6;
+  width: 8px;
+  height: 10px;
+  border-radius: 50%;
+  background: #4a2424;
+}
+
+.girl-eye-left {
+  left: 82px;
+}
+
+.girl-eye-right {
+  left: 128px;
+}
+
+.girl-blush {
+  position: absolute;
+  top: 108px;
+  z-index: 6;
+  width: 18px;
+  height: 10px;
+  border-radius: 50%;
+  background: #f3a98a;
+}
+
+.girl-blush-left {
+  left: 66px;
+}
+
+.girl-blush-right {
+  left: 135px;
+}
+
+.girl-smile {
+  position: absolute;
+  top: 116px;
+  left: 96px;
+  z-index: 6;
+  width: 22px;
+  height: 12px;
+  border-bottom: 3px solid #4a2424;
+  border-radius: 0 0 20px 20px;
+}
+
+.girl-drawstring {
+  position: absolute;
+  top: 180px;
+  z-index: 6;
+  width: 2px;
+  height: 32px;
+  background: #ffe0b8;
+}
+
+.girl-drawstring-left {
+  left: 96px;
+  transform: rotate(5deg);
+}
+
+.girl-drawstring-right {
+  left: 118px;
+  transform: rotate(-5deg);
+}
+
+.girl-pocket {
+  position: absolute;
+  top: 235px;
+  left: 78px;
+  z-index: 6;
+  width: 75px;
+  height: 34px;
+  border: 2px solid #e8a870;
+  border-top: 0;
+  border-radius: 0 0 18px 18px;
+}
+
+.girl-arm {
+  position: absolute;
+  top: 195px;
+  left: 138px;
+  z-index: 6;
+  width: 55px;
+  height: 22px;
+  border-radius: 20px;
+  background: #ffd8b1;
+  transform: rotate(20deg);
+}
+
+.girl-phone {
+  position: absolute;
+  top: 175px;
+  left: 158px;
+  z-index: 7;
+  width: 52px;
+  height: 90px;
+  padding: 5px;
+  border-radius: 12px;
+  background: #4a2424;
+  transform: rotate(-10deg);
+}
+
+.phone-screen {
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+  background: #fbf7f2;
+}
+
+.girl-hand {
+  position: absolute;
+  top: 210px;
+  left: 158px;
+  z-index: 8;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #ffd8b1;
+}
+
+@media (max-width: 991.98px) {
+  .contact-illustration {
+    min-height: 360px;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .contact-illustration {
+    min-height: 320px;
+    padding: 24px 12px;
   }
 
-  #contact h1, p {
-    text-align: center;
-    margin-bottom: 24px;
+  .cartoon-scene {
+    transform: scale(0.9);
   }
-  
-  #contact form {
-    display: flex;
-    flex-direction: column;
-    gap: 14px;
-    background: #FFFFFF;
-    width: 100%;
-    height: auto;
-    border: 1px solid #e1e0e0;
-    border-radius: 16px;
-    padding: 24px;
-  }
-  
-  .form-group {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-  }
-  
-  .form-group input,
-  .form-group textarea {
-    width: 100%;
-    border: 1px solid #e1e0e0;
-    border-radius: 6px;
-    padding: 8px 14px;
-  }
-  
-  .form-group textarea {
-    font-family: Arial, Helvetica, sans-serif;
-    height: 100px;
-  }
-  
-  .fullname {
-    display: flex;
-    gap: 10px;
-  }
-  
-  @media only screen and (max-width: 768px) {
-  
-    #contact {
-      display: block;
-    }
-  
-    .fullname {
-      flex-direction: column;
-      gap: 14px;
-    }
-  }
+}
